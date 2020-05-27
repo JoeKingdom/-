@@ -22,8 +22,8 @@ public partial class Login : System.Web.UI.Page
         SqlCommand cmd = new SqlCommand();
         cmd.Connection = sqlConnection1;
         cmd.CommandText = "Select*from [user] where UserNo=@UserNo and UserPwd=@UserPwd";
-        cmd.Parameters.Add("@UserNo", SqlDbType.Char, 8).Value = txtUserName.Text.Trim();
-        cmd.Parameters.Add("@UserPwd", SqlDbType.Char, 8).Value = txtPassword.Text.Trim();
+        cmd.Parameters.Add("@UserNo", SqlDbType.Char, 10).Value = txtUserName.Text.Trim();
+        cmd.Parameters.Add("@UserPwd", SqlDbType.Char, 10).Value = txtPassword.Text.Trim();
 
         sqlConnection1.Open();
         SqlDataReader dr = cmd.ExecuteReader();

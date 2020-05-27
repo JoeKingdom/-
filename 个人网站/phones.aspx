@@ -22,16 +22,16 @@
             </tr>
             <tr>
                 <td class="auto-style3" style="text-align: center; vertical-align: middle; clip: rect(auto, auto, auto, auto);">
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Width="100%" Height="250px" AllowPaging="True">
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Width="100%" Height="250px" AllowPaging="True" DataKeyNames="No">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
-                            <asp:BoundField DataField="No" HeaderText="编号" SortExpression="No" />
-                            <asp:BoundField DataField="Name" HeaderText="名称" ReadOnly="True" SortExpression="Name" />
-                            <asp:BoundField DataField="Color" HeaderText="颜色" ReadOnly="True" SortExpression="Color" />
-                            <asp:BoundField DataField="runMemory" HeaderText="运行内存" ReadOnly="True" SortExpression="runMemory" />
-                            <asp:BoundField DataField="Memory" HeaderText="内存" ReadOnly="True" SortExpression="Memory" />
-                            <asp:BoundField DataField="Price" HeaderText="价格" ReadOnly="True" SortExpression="Price" />
-                            <asp:BoundField DataField="Number" HeaderText="库存" ReadOnly="True" SortExpression="Number" />
+                            <asp:BoundField DataField="No" HeaderText="No" SortExpression="No" ReadOnly="True" />
+                            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                            <asp:BoundField DataField="Color" HeaderText="Color" SortExpression="Color" />
+                            <asp:BoundField DataField="runMemory" HeaderText="runMemory" SortExpression="runMemory" />
+                            <asp:BoundField DataField="Memory" HeaderText="Memory" SortExpression="Memory" />
+                            <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
+                            <asp:BoundField DataField="Number" HeaderText="Number" SortExpression="Number" />
                         </Columns>
                         <EditRowStyle BackColor="#2461BF" />
                         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -44,7 +44,7 @@
                         <SortedDescendingCellStyle BackColor="#E9EBEF" />
                         <SortedDescendingHeaderStyle BackColor="#4870BE" />
                     </asp:GridView>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:manaConnectionString1 %>" SelectCommand="SELECT DISTINCT [No], [Name], [Color], [runMemory], [Memory], [Price], [Number] FROM [phoneshow]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:mywebsiteConnectionString %>" SelectCommand="SELECT DISTINCT [No], [Name], [Color], [runMemory], [Memory], [Price], [Number] FROM [phone]"></asp:SqlDataSource>
                 </td>
             </tr>
             <tr>

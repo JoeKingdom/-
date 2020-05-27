@@ -25,14 +25,13 @@
                     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="No" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="250px" Width="100%">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
-                            <asp:CommandField ShowEditButton="True" />
-                            <asp:BoundField DataField="No" HeaderText="编号" ReadOnly="True" SortExpression="No" />
-                            <asp:BoundField DataField="Name" HeaderText="名称" SortExpression="Name" />
-                            <asp:BoundField DataField="Color" HeaderText="颜色" SortExpression="Color" />
-                            <asp:BoundField DataField="runMemory" HeaderText="运行内存" SortExpression="runMemory" />
-                            <asp:BoundField DataField="Memory" HeaderText="内存" SortExpression="Memory" />
-                            <asp:BoundField DataField="Number" HeaderText="库存" SortExpression="Number" />
-                            <asp:BoundField DataField="Price" HeaderText="价格" SortExpression="Price" />
+                            <asp:BoundField DataField="No" HeaderText="No" ReadOnly="True" SortExpression="No" />
+                            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                            <asp:BoundField DataField="Color" HeaderText="Color" SortExpression="Color" />
+                            <asp:BoundField DataField="runMemory" HeaderText="runMemory" SortExpression="runMemory" />
+                            <asp:BoundField DataField="Memory" HeaderText="Memory" SortExpression="Memory" />
+                            <asp:BoundField DataField="Number" HeaderText="Number" SortExpression="Number" />
+                            <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
                         </Columns>
                         <EditRowStyle BackColor="#2461BF" />
                         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -45,7 +44,7 @@
                         <SortedDescendingCellStyle BackColor="#E9EBEF" />
                         <SortedDescendingHeaderStyle BackColor="#4870BE" />
                     </asp:GridView>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:manaConnectionString1 %>" SelectCommand="SELECT [No], [Name], [Color], [runMemory], [Memory], [Number], [Price] FROM [phoneshow]" UpdateCommand="UPDATE phoneshow SET Name = @Name, Color = @Color, runMemory = @runMemory, Memory = @Memory, Number = @Number, Price = @Price WHERE (No = @No)">
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:mywebsiteConnectionString4 %>" SelectCommand="SELECT [No], [Name], [Color], [runMemory], [Memory], [Number], [Price] FROM [phone]" UpdateCommand="UPDATE phoneshow SET Name = @Name, Color = @Color, runMemory = @runMemory, Memory = @Memory, Number = @Number, Price = @Price WHERE (No = @No)">
                         <UpdateParameters>
                             <asp:Parameter Name="Name" />
                             <asp:Parameter Name="Color" />

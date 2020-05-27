@@ -21,8 +21,8 @@ public partial class _default : System.Web.UI.Page
         SqlCommand cmd = new SqlCommand();
         cmd.Connection = sqlConnection1;
         cmd.CommandText = "Select*from kehu where No=@No and Pwd=@Pwd";
-        cmd.Parameters.Add("@No", SqlDbType.Char, 8).Value = txtUserName.Text.Trim();
-        cmd.Parameters.Add("@Pwd", SqlDbType.Char, 8).Value = txtPassword.Text.Trim();
+        cmd.Parameters.Add("@No", SqlDbType.Char, 10).Value = txtUserName.Text.Trim();
+        cmd.Parameters.Add("@Pwd", SqlDbType.Char, 10).Value = txtPassword.Text.Trim();
 
         sqlConnection1.Open();
         SqlDataReader dr = cmd.ExecuteReader();

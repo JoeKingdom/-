@@ -23,7 +23,7 @@ public partial class managephones : System.Web.UI.Page
         SqlConnection sqlConnection1 = new SqlConnection(ConnectionString);
         SqlCommand cmd = new SqlCommand();
         cmd.Connection = sqlConnection1;
-        cmd.CommandText = " INSERT INTO phoneshow" + " ([No],[Name],[Color],[runMemory],[Memory],[Number],[Price])" + " VALUES(@No,@Name,@Color,@runMemory,@Memory,@Number,@Price)";
+        cmd.CommandText = " INSERT INTO phone" + " ([No],[Name],[Color],[runMemory],[Memory],[Number],[Price])" + " VALUES(@No,@Name,@Color,@runMemory,@Memory,@Number,@Price)";
         cmd.Parameters.AddWithValue("@No", TextBox1.Text);
         cmd.Parameters.AddWithValue("@Name", TextBox2.Text);
         cmd.Parameters.AddWithValue("@Color", TextBox3.Text);

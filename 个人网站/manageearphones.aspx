@@ -23,18 +23,17 @@
             </tr>
             <tr>
                 <td class="auto-style3" style="text-align: center">
-                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="250px" Width="100%">
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="250px" Width="100%" DataKeyNames="No">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
-                            <asp:CommandField ShowEditButton="True" />
-                            <asp:BoundField DataField="No" HeaderText="编号" SortExpression="No" />
-                            <asp:BoundField DataField="Name" HeaderText="名称" SortExpression="Name" />
-                            <asp:BoundField DataField="Color" HeaderText="颜色" SortExpression="Color" />
-                            <asp:BoundField DataField="Quality" HeaderText="音质" SortExpression="Quality" />
-                            <asp:BoundField DataField="Usb" HeaderText="接口" SortExpression="Usb" />
-                            <asp:BoundField DataField="Type" HeaderText="类型" SortExpression="Type" />
-                            <asp:BoundField DataField="Number" HeaderText="库存" SortExpression="Number" />
-                            <asp:BoundField DataField="Price" HeaderText="价格" SortExpression="Price" />
+                            <asp:BoundField DataField="No" HeaderText="No" SortExpression="No" ReadOnly="True" />
+                            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                            <asp:BoundField DataField="Color" HeaderText="Color" SortExpression="Color" />
+                            <asp:BoundField DataField="Quality" HeaderText="Quality" SortExpression="Quality" />
+                            <asp:BoundField DataField="Usb" HeaderText="Usb" SortExpression="Usb" />
+                            <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" />
+                            <asp:BoundField DataField="Number" HeaderText="Number" SortExpression="Number" />
+                            <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
                         </Columns>
                         <EditRowStyle BackColor="#2461BF" />
                         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -47,7 +46,7 @@
                         <SortedDescendingCellStyle BackColor="#E9EBEF" />
                         <SortedDescendingHeaderStyle BackColor="#4870BE" />
                     </asp:GridView>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:manaConnectionString1 %>" SelectCommand="SELECT [No], [Name], [Color], [Quality], [Usb], [Type], [Number], [Price] FROM [earphone]" UpdateCommand="UPDATE earphone SET Name = @Name, Color = @Color, Quality = @Quality, Usb = @Usb, Type = @Type, Number = @Number, Price = @Price WHERE (No = @No)">
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:mywebsiteConnectionString3 %>" SelectCommand="SELECT [No], [Name], [Color], [Quality], [Usb], [Type], [Number], [Price] FROM [earphone]" UpdateCommand="UPDATE earphone SET Name = @Name, Color = @Color, Quality = @Quality, Usb = @Usb, Type = @Type, Number = @Number, Price = @Price WHERE (No = @No)">
                         <UpdateParameters>
                             <asp:Parameter Name="Name" />
                             <asp:Parameter Name="Color" />

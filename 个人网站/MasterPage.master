@@ -14,17 +14,17 @@
     <div id="zhuye">
         <div id="header" style="background-image: url('/image/loginbg.png'); width: 100%; height: 150px;"></div>
         <div id="banner" style="text-align: center; line-height: 30px; background-color: aqua;">
-            <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="Medium" NavigateUrl="~/phone.aspx">手机</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" Font-Size="Medium" NavigateUrl="~/phones.aspx">手机</asp:HyperLink>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="Medium" NavigateUrl="~/earphone.aspx">耳机</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="Medium" NavigateUrl="~/earphones.aspx">耳机</asp:HyperLink>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="HyperLink3" runat="server" Font-Size="Medium" NavigateUrl="~/peijian.aspx">配件</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink3" runat="server" Font-Size="Medium" NavigateUrl="~/others.aspx">配件</asp:HyperLink>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="HyperLink4" runat="server" Font-Size="Medium" NavigateUrl="~/computer.aspx">电脑</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink4" runat="server" Font-Size="Medium" NavigateUrl="~/computers.aspx">电脑</asp:HyperLink>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:HyperLink ID="HyperLink5" runat="server" Font-Size="Medium" NavigateUrl="~/advice.aspx">留言</asp:HyperLink>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/UserLogin.aspx">管理员</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/AdminLogin.aspx">管理员</asp:HyperLink>
             </div>
     <div id="body">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
