@@ -13,7 +13,7 @@ public partial class advice : System.Web.UI.Page
         {
             if (Session["Name"] == null)
             {//未登录
-                Response.Redirect("Default2.aspx");
+                Response.Redirect("default.aspx");
             }
             else
             {//在欢迎信息中显示用户名

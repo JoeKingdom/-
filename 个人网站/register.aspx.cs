@@ -16,9 +16,8 @@ public partial class register : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        string ConnectionString = "Data Source=localhost\\sqlexpress.;Database=mywebsite;User ID=sa;pwd=123456";
+        string ConnectionString = "server=localhost\\sqlexpress;User Id=sa;pwd=123456;Database=mywebsite";
         SqlConnection sqlConnection1 = new SqlConnection(ConnectionString);
-
         SqlCommand cmd = new SqlCommand();
         cmd.Connection = sqlConnection1;
         cmd.CommandText = " INSERT INTO kehu" + " ([No],[Pwd],[Name],[Email],[Tel])" + " VALUES(@No,@Pwd,@Name,@Email,@Tel)";
@@ -37,7 +36,7 @@ public partial class register : System.Web.UI.Page
         if (r > 0)
         {
             msg = "<script>alert('注册成功')</script>";
-            Response.Redirect("Default2.aspx");
+            Response.Redirect("default.aspx");
         }
         else
             msg = "<script>alert('注册失败')</script>";

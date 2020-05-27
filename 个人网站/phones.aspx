@@ -18,7 +18,7 @@
     <div id="main" style="width:100%; height:450px">
         <table class="auto-style1">
             <tr>
-                <td class="auto-style2" style="font-size: xx-large; text-decoration: blink; text-align: center">手机</td>
+                <td class="auto-style2" style="font-size: xx-large; text-align: center">手机</td>
             </tr>
             <tr>
                 <td class="auto-style3" style="text-align: center; vertical-align: middle; clip: rect(auto, auto, auto, auto);">

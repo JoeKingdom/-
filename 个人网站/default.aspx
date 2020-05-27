@@ -40,7 +40,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
     <div id="login" style="width: 100%; height: 450px">
         <div id="loginpage" style="width: 30%; height: 70%; background-color: gray; margin-top: 6%; margin-left: 35%;">
-       <table align="center" class="auto-style9" style="background-color: skyblue">
+       <table  class="auto-style9" style="background-color: skyblue">
            <tr>
                <td class="auto-style10" colspan="2" style="text-align: center">&nbsp;登录</td>
            </tr>
@@ -74,9 +74,9 @@
            </tr>
            <tr>
                <td colspan="2" style="text-align: center">
-                   <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/UserLogin.aspx">管理员！</asp:HyperLink>
+                   <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AdminLogin.aspx">管理员！</asp:HyperLink>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/reg.aspx">用户注册！</asp:HyperLink>
+                   <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/register.aspx">用户注册！</asp:HyperLink>
                </td>
            </tr>
        </table>

@@ -35,14 +35,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
     <div id="main" style="width:100%; height:450px">
 
-        <table cellspacing="1" class="auto-style13" style="text-align: center; margin-top: 8%; margin-left: 30%; background-color: skyblue;">
+        <table  class="auto-style13" style="text-align: center; margin-top: 8%; margin-left: 30%; background-color: skyblue;">
             <tr>
-                <td class="auto-style17" colspan="3" style="margin-top: 12%; font-size: x-large; text-decoration: blink;">用户注册</td>
+                <td class="auto-style17" colspan="3" style="margin-top: 12%; font-size: x-large;">用户注册</td>
             </tr>
             <tr>
                 <td class="auto-style25" style="margin-top: 12%; text-align: right;">账号：</td>
                 <td class="auto-style22" style="margin-top: 12%; text-align: left;">
-                    <asp:TextBox ID="txtNo" runat="server" Width="170px" OnTextChanged="txtNo_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="txtNo" runat="server" Width="170px"></asp:TextBox>
                 </td>
                 <td class="auto-style19" style="margin-top: 12%; width: 30%; text-align: left;">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtNo" ErrorMessage="空"></asp:RequiredFieldValidator>
@@ -78,7 +78,7 @@
             <tr>
                 <td class="auto-style25" style="margin-top: 12%; text-align: right;">邮箱：</td>
                 <td class="auto-style22" style="margin-top: 12%; text-align: left;">
-                    <asp:TextBox ID="txtEmail" runat="server" TextMode="Email" Width="170px"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" runat="server" Width="170px"></asp:TextBox>
                 </td>
                 <td class="auto-style19" style="margin-top: 12%; width: 30%; text-align: left;">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtEmail" ErrorMessage="空"></asp:RequiredFieldValidator>
@@ -87,7 +87,7 @@
             <tr>
                 <td class="auto-style25" style="margin-top: 12%; text-align: right;">电话：</td>
                 <td class="auto-style22" style="margin-top: 12%; text-align: left;">
-                    <asp:TextBox ID="txtTelephone" runat="server" TextMode="Phone" Width="170px"></asp:TextBox>
+                    <asp:TextBox ID="txtTelephone" runat="server"  Width="170px"></asp:TextBox>
                 </td>
                 <td class="auto-style20" style="margin-top: 12%; width: 30%; text-align: left;">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtTelephone" ErrorMessage="空"></asp:RequiredFieldValidator>

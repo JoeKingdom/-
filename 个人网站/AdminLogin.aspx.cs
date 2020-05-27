@@ -16,7 +16,7 @@ public partial class Login : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        string ConnectionString = "Data Source=localhost\\sqlexpress.;Database=mywebsite;User ID=sa;pwd=123456";
+        string ConnectionString = "server=localhost\\sqlexpress;User Id=sa;pwd=123456;Database=mywebsite";
         SqlConnection sqlConnection1 = new SqlConnection(ConnectionString);
         
         SqlCommand cmd = new SqlCommand();

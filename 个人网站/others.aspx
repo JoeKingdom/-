@@ -49,7 +49,7 @@
         <tr>
             <td style="text-align: center">
                 <asp:Label ID="Label1" runat="server" Text="编号："></asp:Label>
-                <asp:DropDownList ID="ddlNo" runat="server" DataSourceID="SqlDataSource1" DataTextField="No" DataValueField="No" Height="25px" Width="110px" OnSelectedIndexChanged="ddlNo_SelectedIndexChanged">
+                <asp:DropDownList ID="ddlNo" runat="server" DataSourceID="SqlDataSource1" DataTextField="No" DataValueField="No" Height="25px" Width="110px">
                 </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Label ID="Label3" runat="server" Text="姓名："></asp:Label>
