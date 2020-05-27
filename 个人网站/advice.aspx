@@ -21,7 +21,7 @@
     <div style="height: 450px; width: 100%">
         <table class="auto-style1">
             <tr>
-                <td class="auto-style2" style="font-size: xx-large; text-decoration: blink; text-align: center">留言</td>
+                <td class="auto-style2" style="font-size: xx-large; text-align: center">留言</td>
             </tr>
             <tr>
                 <td class="auto-style3" style="text-align: center">欢迎<asp:Label ID="lblUserName" runat="server" Text="Label"></asp:Label>
@@ -29,7 +29,7 @@
                     位访客</td>
             </tr>
             <tr>
-                <td class="auto-style4" style="text-align: center"><iframe src="ShowChat.aspx" width="70%" height="300"></iframe></td>
+                <td class="auto-style4" style="text-align: center"><iframe src="ShowChat.aspx" width="700" height="300"></iframe></td>
             </tr>
             <tr>
                 <td style="text-align: center">
