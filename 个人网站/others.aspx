@@ -43,7 +43,7 @@
                     <SortedDescendingCellStyle BackColor="#E9EBEF" />
                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:manaConnectionString1 %>" SelectCommand="SELECT [No], [Name], [Color], [Quality], [Number], [Price] FROM [peijian]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:mywebsiteConnectionString %>" SelectCommand="SELECT [No], [Name], [Color], [Quality], [Number], [Price] FROM [peijian]"></asp:SqlDataSource>
             </td>
         </tr>
         <tr>

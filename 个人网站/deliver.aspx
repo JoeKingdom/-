@@ -23,13 +23,13 @@
             <tr>
                 <td class="auto-style3" style="width: 30%">&nbsp;</td>
                 <td class="auto-style3" style="text-align: center">
-                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="250px" Width="100%">
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="250px" Width="100%" DataKeyNames="kehuName">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
-                            <asp:BoundField DataField="No" HeaderText="商品编号" SortExpression="No" />
-                            <asp:BoundField DataField="Number" HeaderText="订购数量" SortExpression="Number" />
-                            <asp:BoundField DataField="kehuName" HeaderText="客户姓名" SortExpression="kehuName" />
-                            <asp:BoundField DataField="kehuPhone" HeaderText="客户电话" SortExpression="kehuPhone" />
+                            <asp:BoundField DataField="No" HeaderText="No" SortExpression="No" />
+                            <asp:BoundField DataField="Number" HeaderText="Number" SortExpression="Number" />
+                            <asp:BoundField DataField="kehuName" HeaderText="kehuName" SortExpression="kehuName" ReadOnly="True" />
+                            <asp:BoundField DataField="kehuPhone" HeaderText="kehuPhone" SortExpression="kehuPhone" />
                         </Columns>
                         <EditRowStyle BackColor="#2461BF" />
                         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -42,7 +42,7 @@
                         <SortedDescendingCellStyle BackColor="#E9EBEF" />
                         <SortedDescendingHeaderStyle BackColor="#4870BE" />
                     </asp:GridView>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:manaConnectionString1 %>" SelectCommand="SELECT [No], [Number], [kehuName], [kehuPhone] FROM [yuding]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:mywebsiteConnectionString %>" SelectCommand="SELECT * FROM [yuding]"></asp:SqlDataSource>
                 </td>
                 <td class="auto-style3" style="width: 30%">&nbsp;</td>
             </tr>
